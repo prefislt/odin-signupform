@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,300;1,500;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -53,4 +53,95 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: rgb(241, 241, 241);
+}
+.container .right .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 100%;
+  padding: 0 0 30px 50px;
+  box-sizing: border-box;
+  font-weight: 500;
+  gap: 20px;
+  font-size: 1.3rem;
+}
+.container .right .top p {
+  max-width: 80%;
+}
+.container .right .middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  height: 100%;
+  background-color: white;
+  padding: 30px 50px 30px 50px;
+  box-sizing: border-box;
+}
+.container .right .middle p {
+  padding-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.container .right .middle form {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.container .right .middle form .input {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding-right: 50px;
+}
+.container .right .middle form .input label {
+  text-transform: uppercase;
+  color: rgb(75, 75, 75);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+.container .right .middle form .input input {
+  height: 30px;
+  padding: 0 5px 0 5px;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 5px;
+}
+.container .right .bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 100%;
+  padding: 30px 50px 30px 50px;
+  box-sizing: border-box;
+  gap: 10px;
+}
+.container .right .bottom a {
+  text-decoration: none;
+  color: rgb(47, 111, 47);
+  font-weight: 700;
+  transition: 0.15s ease-in-out;
+}
+.container .right .bottom a:hover {
+  color: rgb(63, 152, 63);
+}
+.container .right .bottom button {
+  border: 0;
+  padding: 15px 30px 15px 30px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background-color: rgb(47, 111, 47);
+  color: white;
+  transition: 0.15s ease-in-out;
+  cursor: pointer;
+}
+.container .right .bottom button:hover {
+  background-color: rgb(63, 152, 63);
+  transform: scale(1.1);
+}
+.container .right .bottom button:active {
+  transform: scale(1);
 }/*# sourceMappingURL=main.css.map */

@@ -1,45 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up Form</title>
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-    <div class="container">
-        <div class="left">
-            <p>LOGO</p>
-            <p>Photo by <a href="https://unsplash.com/@filipz">Filip Zrnzević</a> on <a href="https://unsplash.com/photos/QsWG0kjPQRY">Unsplash</a></p>
-        </div>
-        <div class="right">
-            <div class="top">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magnam quas culpa quibusdam voluptatem nesciunt quaerat dolores. Quod, corporis omnis.</p>
-                <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="middle">
-                <p>Let's do this!</p>
-                <form action="#">
-                    <label for="fname">First name:</label>
-                    <input type="text" name="fname" id="fname">
-                    <label for="lname">Last name:</label>
-                    <input type="text" name="lname" id="lname">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email">
-                    <label for="number">Phone number:</label>
-                    <input type="number" name="number" id="number">
-                    <label for="password">Password:</label>
-                    <input type="password" name="password" id="password">
-                    <label for="cpassword">Confirm password:</label>
-                    <input type="cpassword" name="cpassword" id="cpassword">
-                </form>
-            </div>
-            <div class="bottom">
-                <p><a href="#">Create Account</a></p>
-                <p>Already have an account?<a href="#">Log In</a></p>
-            </div>
-        </div>
-    </div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sign Up Form</title>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="left">
+				<p>LOGO</p>
+				<p>
+					Photo by <a href="https://unsplash.com/@filipz">Filip Zrnzević</a> on
+					<a href="https://unsplash.com/photos/QsWG0kjPQRY">Unsplash</a>
+				</p>
+			</div>
+			<div class="right">
+				<div class="top">
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+						magnam quas culpa quibusdam voluptatem nesciunt quaerat dolores.
+						Quod, corporis omnis.
+					</p>
+					<p><i>Lorem ipsum dolor sit amet.</i></p>
+				</div>
+				<div class="middle">
+					<p>Let's do this!</p>
+					<form>
+						<div class="input">
+							<label for="fname">First name</label>
+							<input type="text" name="fname" id="fname" />
+                        </div>
+						<div class="input">
+							<label for="lname">Last name</label>
+							<input type="text" name="lname" id="lname" />
+						</div>
+						<div class="input">
+							<label for="email">Email</label>
+							<input type="email" name="email" id="email" />
+						</div>
+						<div class="input">
+							<label for="number">Phone number</label>
+							<input type="text" name="number" id="number" />
+						</div>
+						<div class="input">
+							<label for="password">Password</label>
+							<input type="password" name="password" id="password" />
+						</div>
+						<div class="input">
+							<label for="cpassword">Confirm password</label>
+							<input type="password" name="cpassword" id="cpassword" />
+						</div>
+					</form>
+				</div>
+				<div class="bottom">
+					<p><button type="submit">Create Account</button></p>
+					<p>Already have an account? <a href="#">Log In</a></p>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
