@@ -1,176 +1,200 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:ital,wght@0,400;0,500;0,700;1,300;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:ital,wght@0,400;0,500;0,700;1,300;1,500;1,700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    height: 100vh;
-    overflow-x: hidden;
+	font-family: "Poppins", sans-serif;
+	height: 100vh;
+	overflow-x: hidden;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
+	display: flex;
+	flex-direction: row;
+	height: 100%;
 
-    .left {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        color: white;
-        background-image: url("../img/bg.jpg");
-        background-position: bottom;
-        background-size: 100vh;
-        padding: 10px 0 10px 0;
-        box-sizing: border-box;
-        width: 70%;
-        min-width: 250px;
-        height: 100%;
+	.left {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		color: white;
+		background-image: url("../img/bg.jpg");
+		background-position: bottom;
+		background-size: 100vh;
+		padding: 10px 0 10px 0;
+		box-sizing: border-box;
+		width: 70%;
+		min-width: 250px;
+		height: 100%;
 
-        p:nth-child(1) { // logo
-            font-family: 'Dancing Script', cursive;
-            display: flex;
-            justify-content: center;
-            font-size: 5rem;
-            background-color: rgba(0, 0, 0, 0.4);
-            width: 100%;
-            padding: 20px 0 20px 0;
-            margin-top: 100px;
+		p:nth-child(1) {
+			// logo
+			font-family: "Dancing Script", cursive;
+			display: flex;
+			justify-content: center;
+			font-size: 5rem;
+			background-color: rgba(0, 0, 0, 0.4);
+			width: 100%;
+			padding: 20px 0 20px 0;
+			margin-top: 100px;
 
-            img {
-                width: 80px;
-            }
-        }
+			img {
+				width: 80px;
+			}
+		}
 
-        p:nth-child(2) {
-            color: rgb(186, 186, 186);
-            font-size: 0.7rem;
+		p:nth-child(2) {
+			color: rgb(186, 186, 186);
+			font-size: 0.7rem;
 
-            a {
-                color: rgb(186, 186, 186);
-                text-decoration: underline;
-                transition: 0.2s ease-in-out;
-            }
+			a {
+				color: rgb(186, 186, 186);
+				text-decoration: underline;
+				transition: 0.2s ease-in-out;
+			}
 
-            a:hover {
-                color: rgb(254, 254, 254);
-            }
-        }
-    }
+			a:hover {
+				color: rgb(254, 254, 254);
+			}
+		}
+	}
 
-    .right {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background-color: rgb(241, 241, 241);
+	.right {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background-color: rgb(241, 241, 241);
 
-        .top {
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
-            height: 100%;
-            padding: 0 0 30px 50px;
-            box-sizing: border-box;
-            font-weight: 500;
-            gap: 20px;
-            font-size: 1.3rem;
+		.top {
+			display: flex;
+			flex-direction: column;
+			justify-content: end;
+			height: 100%;
+			padding: 0 0 30px 50px;
+			box-sizing: border-box;
+			font-weight: 500;
+			gap: 20px;
+			font-size: 1.3rem;
 
-            p {
-                max-width: 80%;
-            }
-        }
+			p {
+				max-width: 80%;
+			}
+		}
 
-        .middle {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: left;
-            height: 100%;
-            background-color: white;
-            padding: 30px 50px 30px 50px;
-            box-sizing: border-box;
+		.middle {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: left;
+			height: 100%;
+			background-color: white;
+			padding: 30px 50px 30px 50px;
+			box-sizing: border-box;
 
-            p {
-                padding-bottom: 20px;
-                font-size: 1.8rem;
-                font-weight: 500;
-            }
+			p {
+				padding-bottom: 20px;
+				font-size: 1.8rem;
+				font-weight: 500;
+			}
 
-            form {
-                display: flex;
-                justify-content: left;
-                align-items: center;
-                flex-wrap: wrap;
-                gap: 15px;
+			form {
+				display: flex;
+				justify-content: left;
+				align-items: center;
+				flex-wrap: wrap;
+				gap: 15px;
 
-                .input {
-                    display: flex;
-                    flex-direction: column;
-                    width: 250px;
-                    padding-right: 50px;
+				.input {
+					display: flex;
+					flex-direction: column;
+					width: 250px;
+					padding-right: 50px;
+					transition: 0.2s ease-in-out;
 
-                    label {
-                        text-transform: uppercase;
-                        color: rgb(75, 75, 75);
-                        font-size: 0.8rem;
-                        letter-spacing: 1px;
-                    }
+					label {
+						text-transform: uppercase;
+						color: rgb(75, 75, 75);
+						font-size: 0.8rem;
+						letter-spacing: 1px;
+					}
 
-                    input {
-                        height: 30px;
-                        padding: 0 5px 0 5px;
-                        border: 1px solid rgb(220, 220, 220);
-                        border-radius: 5px;
-                    }
+					input {
+						height: 30px;
+						padding: 0 5px 0 5px;
+						border: 1px solid rgb(220, 220, 220);
+						border-radius: 5px;
 
+						&:focus {
+							outline: none;
+						}
+					}
+
+					.passwordred {
+						border: 1px solid rgb(255, 68, 68);
+					}
+
+					.passwordgreen {
+						border: 1px solid rgb(6, 191, 0);
+					}
+				}
+			}
+
+            .errors {
+                height: 20px;
+
+                .redtext {
+                    position: relative;
+                    font-size: 0.7rem;
+                    color: red;
+                    
                 }
             }
-        }
+		}
 
-        .bottom {
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            height: 100%;
-            padding: 30px 50px 30px 50px;
-            box-sizing: border-box;
-            gap: 10px;
+		.bottom {
+			display: flex;
+			flex-direction: column;
+			justify-content: start;
+			height: 100%;
+			padding: 30px 50px 30px 50px;
+			box-sizing: border-box;
+			gap: 10px;
 
-            a {
-                text-decoration: none;
-                color: rgb(47, 111, 47);
-                font-weight: 700;
-                transition: 0.15s ease-in-out;
+			a {
+				text-decoration: none;
+				color: rgb(47, 111, 47);
+				font-weight: 700;
+				transition: 0.15s ease-in-out;
 
-                &:hover {
-                    color: rgb(63, 152, 63);
-                }
-            }
+				&:hover {
+					color: rgb(63, 152, 63);
+				}
+			}
 
-            button {
-                border: 0;
-                padding: 15px 30px 15px 30px;
-                border-radius: 5px;
-                font-size: 1.1rem;
-                font-weight: 700;
-                background-color: rgb(47, 111, 47);
-                color: white;
-                transition: 0.15s ease-in-out;
-                cursor: pointer;
+			button {
+				border: 0;
+				padding: 15px 30px 15px 30px;
+				border-radius: 5px;
+				font-size: 1.1rem;
+				font-weight: 700;
+				background-color: rgb(47, 111, 47);
+				color: white;
+				transition: 0.15s ease-in-out;
+				cursor: pointer;
 
-                &:hover {
-                    background-color: rgb(63, 152, 63);
-                    transform: scale(1.1);
-                }
+				&:hover {
+					background-color: rgb(63, 152, 63);
+					transform: scale(1.1);
+				}
 
-                &:active {
-                    transform: scale(1);
-                }
-            }
-        }
-    }
+				&:active {
+					transform: scale(1);
+				}
+			}
+		}
+	}
 }

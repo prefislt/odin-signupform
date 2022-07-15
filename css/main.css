@@ -102,6 +102,7 @@ body {
   flex-direction: column;
   width: 250px;
   padding-right: 50px;
+  transition: 0.2s ease-in-out;
 }
 .container .right .middle form .input label {
   text-transform: uppercase;
@@ -114,6 +115,23 @@ body {
   padding: 0 5px 0 5px;
   border: 1px solid rgb(220, 220, 220);
   border-radius: 5px;
+}
+.container .right .middle form .input input:focus {
+  outline: none;
+}
+.container .right .middle form .input .passwordred {
+  border: 1px solid rgb(255, 68, 68);
+}
+.container .right .middle form .input .passwordgreen {
+  border: 1px solid rgb(6, 191, 0);
+}
+.container .right .middle .errors {
+  height: 20px;
+}
+.container .right .middle .errors .redtext {
+  position: relative;
+  font-size: 0.7rem;
+  color: red;
 }
 .container .right .bottom {
   display: flex;
