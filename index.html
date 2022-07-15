@@ -27,38 +27,38 @@
 				</div>
 				<div class="middle">
 					<p>Let's do this!</p>
-					<form>
+					<form id="signUp" action="#" method="GET">
 						<div class="input">
 							<label for="fname">First name</label>
-							<input type="text" name="fname" id="fname" />
+							<input type="text" name="fname" id="fname" required/>
                         </div>
 						<div class="input">
 							<label for="lname">Last name</label>
-							<input type="text" name="lname" id="lname" />
+							<input type="text" name="lname" id="lname" required/>
 						</div>
 						<div class="input">
 							<label for="email">Email</label>
-							<input type="email" name="email" id="email" />
+							<input type="email" name="email" id="email" required/>
 						</div>
 						<div class="input">
 							<label for="number">Phone number</label>
-							<input type="text" name="number" id="number" />
+							<input type="text" name="number" id="number" required/>
 						</div>
 						<div class="input" id="pass">
 							<label for="password">Password</label>
-							<input type="password" name="password" id="password" />
+							<input type="password" name="password" id="password" required/>
 						</div>
 						<div class="input">
 							<label for="cpassword">Confirm password</label>
-							<input type="password" name="cpassword" id="cpassword" />
+							<input type="password" name="cpassword" id="cpassword" required/>
 						</div>
 					</form>
                     <div class="errors">
-                        
+
                     </div>
 				</div>
 				<div class="bottom">
-					<p><button type="submit">Create Account</button></p>
+					<p><button id="submitButton" form="signUp" type="submit">Create Account</button></p>
 					<p>Already have an account? <a href="#">Log In</a></p>
 				</div>
 			</div>

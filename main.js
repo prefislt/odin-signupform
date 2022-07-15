@@ -14,6 +14,7 @@ function checkPass() {
         cpass.classList.remove("passwordgreen");
 
         document.querySelector(".errors").removeChild(passError);
+        document.querySelector("#submitButton").disabled = false;
     } else if (pass.value === cpass.value) {
         pass.classList.add("passwordgreen");
         cpass.classList.add("passwordgreen");
@@ -22,6 +23,7 @@ function checkPass() {
         cpass.classList.remove("passwordred");
 
         document.querySelector(".errors").removeChild(passError);
+        document.querySelector("#submitButton").disabled = false;
     } else {
         pass.classList.add("passwordred");
         cpass.classList.add("passwordred");
@@ -30,6 +32,7 @@ function checkPass() {
         cpass.classList.remove("passwordgreen");
 
         document.querySelector(".errors").appendChild(passError);
+        document.querySelector("#submitButton").disabled = true;
     }
 }
 
